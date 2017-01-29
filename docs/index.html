@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="script.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<!--Script-->
+	
+	<title>Weather App</title>
+	<style >
+	html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+		body{
+			background: url("bckground.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            font-family: 'Poiret One',sans-serif;
+			
+		}
+		
+	.centered {
+	  position: fixed;
+	  top: 40%;
+	  left: 40%;
+	  margin-top: -50px;
+	  margin-left: -50px;
+	  background:rgba(0,0,0,0.7);
+	  padding: 10px;
+   }
+   i{
+   	color: black;
+   	margin-right: 2px;
+   	padding-right: 10px;
+   }
+	.btn{
+		margin-top: 10px;
+		margin-right: 5px;
+		font-size: 1.6em;
+	}
+		img{
+			margin-left: 30px;
+			border-radius: 50%;
+			background: rgba(255,255,255,0.8);
+		}
+		p{
+			display: block;
+			font-weight: 600;
+			font-size: 30px;
+			color: white;
+			margin-bottom: 15px;
+		}
+		/*.left{
+			padding: 15px;
+			display: block;
+			float: left;
+			background-color:rgba(0,0,0,0.65);
+			margin auto;
+		}
+		.right{
+			padding: 10px;
+			display: block;
+			float: right;
+			background-color:rgba(0,0,0,0.65);
+		}*/
+		#cels , #fah{
+			display: none;
+		}
+	</style>
+</head>
+<body >
+	<div class="container-fluid">
+		
+			<div  id="City" class="centered">
+					
+				<div class='centered'><p>Please enabled location</p></div>
+		
+			</div>
+			<button id="weather"  class="btn btn-warning">Show me the current weather</button>
+			<button id='cels' class='btn btn-danger'><i class='fa fa-thermometer-full' aria-hidden='true'></i>Celsius</button>
+			<button  id='fah' class='btn btn-danger'><i class='fa fa-thermometer-full' aria-hidden='true'></i>Fahreinheit</button>
+	</div>	
+		
+</body>
+</html>
